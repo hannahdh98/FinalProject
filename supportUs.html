@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<title>Support Us Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.scss">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fb1.jpg");
+  min-height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/owl.jpg");
+
+  /* Set a specific height */
+  height:100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+
+        <a class="w3-bar-item w3-button w3-wide"href="index.html" style="padding: 4px;margin:auto"> <img src="images/logo.png" style="height:70px;width: 70px;" title="mycompanylogo"></a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#support" class="w3-bar-item w3-button">Contribution</a>
+      <a href="#supportW" class="w3-bar-item w3-button">Support Wildlife</a>
+      <a href="#support2" class="w3-bar-item w3-button">Dine & Shop</a>
+      <a href="#supportP" class="w3-bar-item w3-button">Pledge </a>
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-house"></i> Home</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#support" onclick="w3_close()" class="w3-bar-item w3-button">Contribution</a>
+  <a href="#supportW" onclick="w3_close()" class="w3-bar-item w3-button">Support Wildlife</a>
+  <a href="#support2" onclick="w3_close()" class="w3-bar-item w3-button">Dine & Shop</a>
+  <a href="#supportP" onclick="w3_close()" class="w3-bar-item w3-button">Pledge</a>
+  <a href="EventsPrograms.html" onclick="w3_close()" class="w3-bar-item w3-button">Events and Programs</a>
+
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Support the Brukner Nature Center!</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Support the Brukner Nature Center!</span><br>
+    
+    <span class="w3-large">It's About Wildlife!</span> 
+    <a href="https://www.paypal.com/donate?token=aiwTATk5GsTw_QwvOEdODl6e75wlnORg_guVlUas1jjFI9EHv-E__urzJHi5T0DXgOO9jcnsmtQzsNe3" class="w3-button w3-light-grey"><i class="w3-margin-right"></i>Donate</a>
+
+  </div> 
+  
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <a href="https://www.facebook.com/BruknerNatureCenter" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/bruknernaturecenter/" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+    <a href="https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=youtu.be" title="Youtube"><i class="fa fa-youtube w3-hover-opacity"></i></a> 
+
+  
+  </div>
+</header>
+
+<!-- Support Section -->
+<div class="w3-container" style="padding:128px 16px" id="support">
+  <h3 class="w3-center">Interested in Supporting Brekner Nature Center?</h3>
+  <p class="w3-center w3-large">  <img src="images/logo.jpg" alt="logo"></p>
+
+  <p class="w3-center w3-large">Brukner Support Opportunities</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <div class="w3-quarter">
+      <p class="w3-large">Support Us...
+      </p>
+      <p>Make a Supporting Contribution:
+
+        Brukner Nature Center is a privately funded non-profit organization promoting the appreciation and understanding of wildlife conservation through preservation, education, and rehabilitation. We receive no tax dollars but our Interpretive Building and trails are open to the public. We rely on contributions and grants to fulfill our mission. Please consider making a contribution  to support us today!</p>
+
+      </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large">Become a BNC member!</p>
+      <p>Become a BNC Volunteer! We need your help! Volunteers form the backbone of Brukner Nature Center. We could not possibly reach all of our goals without your support. We have opportunities for all ages, skill levels and interests. From mowing grass to baking cookies to leading school groups...come join our family today! Simply fill out a Volunteer Form and mail to: Brukner Nature Center 5995 Horseshoe Bend Rd. Troy, OH 45373 or e-mail to info@bruknernaturecenter.com </p>
+      <a href="PDFs/membership_application.pdf" class="button" download><i class="fa fa-download"></i>Download Membership Form</a>
+
+    </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large">Leave a Legacy</p>
+      <p>
+        In order to continue our mission, we need financial long-term financial assistance from people like you.  By leaving a legacy through a gift in your will, you can continue to help us reach our goals far into the future.  Your gift is a lasting tribute.</p>
+
+      </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large">Make a Memorial Contribution</p>
+      <p>
+
+        To honor a loved one with a contribution in their name, simply download our BNC Memorial  Form, and return it with a check payable to Brukner Nature Center.</p>
+        <a href="PDFs/memorial-fund.pdf" class="button" download><i class="fa fa-download"></i>Download Memorial Fund Form</a>
+
+      </div>
+  </div>
+
+</div>
+<!-- dine/shop -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64"id="support2">
+ 
+
+    <h3>Brukner Dining/Shopping Support Options</h3>
+
+  <div class="w3-quarter">
+
+    <span class="w3-xlarge">Dine to Donate</span>
+    <br>Support the wildlife ambassadors at Brukner Nature Center by eating out!
+
+    Did you know that it costs over $1,000 every year just to feed our 50 permanent wildlife ambassadors?
+    
+    From mealworms for the spotted salamanders to Zupreme for the bobcat, it all adds up.  So take your family and friends out to eat each month and support Brukner nature Center!
+    <a href="PDFs/dine_to_donate2.pdf" class="button" download><i class="fa fa-download"></i>Download Dine-to-donate Flyer</a>
+
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Shop For Good!</span>
+    <br>If you plan to shop online during the upcoming holiday season, consider going through www.GoodShop.com.  By choosing Brukner Nature Center, you can have a portion of each online sale you make at participating merchants donated to us with no additional cost to you.  Many merchants also offer GoodShop exclusive discounts and coupon codes that can be used to help you save money on your purchases.  If you travel and make your own reservations online, many travel-related companies also participate with GoodShop.  You can even download a toolbar that will help you remember to shop through GoodShop.  How much can you give to Brukner without giving?
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Nature Shop </span>
+<br> We have a variety of items for sale ranging from a quarter and up!  Make great gifts for birthday grab bags & Christmas stocking stuffers.  Wide variety of birdhouses and field guides.
+
+Check us out!
+<br> Purchase a BNC T-shirt!
+
+Check out our new BNC design on our t-shirts!
+
+Youth t-shirts are available in "aluminum gray" with rust orange type.
+
+Sizes for youth t-shirts are small - large
+Adult t-shirts are available in "aluminum gray" with olive green type.
+
+Sizes for adult shirts are small - xxlarge
+All shirts are $20 each
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Need a Nature Book?</span>
+    <br>We would be happy to order one for you!  Just let us know the title and author and we’ll place the order.  Books are received within 2 weeks and your purchase helps support our mission!   Payment must be received prior to ordering.
+  </div>
+</div>
+</div>
+
+<!-- Animal Support Section -->
+<div class="w3-container" style="padding:128px 16px" id="supportW" style="background-color:rgba(0, 0, 0, 0.342)">
+  <div class="parallax">
+
+  <h3 class="w3-center" style="color:white;">Support our Wildlife!</h3>
+  <p class="w3-center w3-large" style="color:white;">Brukner Support Opportunities</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <div class="w3-quarter">
+      <p class="w3-large"style="color:white;">Adopt an Animal
+      </p>
+      <p style="color:white;">Are you looking for a gift for the person who has everything?
+
+        When you participate in the Adopt-an-Animal program at Brukner Nature Center, your donation helps to pay for the food and husbandry that our resident wildlife need to survive, from individualized diets to specialized cage improvements and daily enrichments.
+        
+        We have adoption levels ranging from $25 - $200 based on the animal you choose to adopt!
+        <a href="PDFs/adopt-an-animal-brochure.pdf" class="button" download><i class="fa fa-download"></i>Download Adopt an Animal Brochure</a>
+
+      </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large" style="color:white;">Adopt a Release Box</p>
+      <p style="color:white;">Our wildlife rehab patients need your help!
+
+        Your support of our "Adopt-a-Release Box" program will help us to continue to provide hundreds of wildlife rehab patients with the support they need as they return to the wild.  Animals such as Virginia opossums and eastern gray squirrels are provided a release box to help stimulate a natural environment that provides shelter from predators and weather, as well as, a place to rest.
+        
+        All release box donations are $20. </p>
+      
+        <a href="PDFs/adopt-a-release-box-brochure.pdf" class="button" download><i class="fa fa-download"></i>Download Adopt a Release Box Brochure</a>
+
+    </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large" style="color:white;">Wish List</p>
+      <p style="color:white;">
+        Wildlife Rehab:
+
+Disposable non-latex exam gloves (size M/L), bath towels (please, no holes or frayed edges), Cheerios (plain), cottonballs, Timothy hay, fresh fruit & vegetables, moist & dry cat food, dry dog food, poultry grower & finisher (16% protein), saline solution, He laundry detergent pods, dishwasher detergent pods, bleach, 30 gallon force flex trash bags, toilet paper, paper towels, live mealworms, live waxworms, hard-shelled nuts (acorns, walnuts, etc), black oil sunflower seed, mixed seed, gift cards to Meijer, Lowes, PetCo, and Tractor Supply.
+
+Nature Education:
+
+Gift cards for Kroger, Jay & Mary's Book Store, and Amazon, jumbo clear hand soap refill, jumbo hand sanitizer refill, sanitizer wipes, spring clothes pins, 30 gallon black trash bags, watercolor paint sets, tissues, washable markers, construction paper (yellow, blue, black, brown).
+      </p>
+
+      </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large" style="color:white;" >AmazonSmile</p>
+      <p style="color:white;">
+        BNC will receive 0.5% of the
+
+purchase price of all eligible
+
+AmazonSmile items and you
+
+can also purchase items from
+
+our Amazon wish list!
+
+Participating in AmazonSmile is very simple.
+
+Simply login to AmazonSmile, just like you’re shopping for yourself, you will then be prompted to select your charity, like Brukner Nature Center. Everything else about your Amazon shopping experience will remain the same.
+To view our wishlist on Amazon, go to the upper right of the screen and click on "Wish List" menu.
+Scroll down to “find a wish list” and click.
+Enter our e-mail address: info@bruknernaturecenter.com
+It will take you right to our wish list.
+Simply click the “add to cart” button to add an item to your personal shopping cart!
+Questions, please call 937-698-6493.
+      </p>
+      </div>
+  </div>
+
+</div>
+
+<!-- Pledge -->
+<div class="w3-container" style="padding:128px 16px" id="supportP">
+        <h3 class="w3-center">Rewards And More to Help Support BNC </h3>
+                 <canvas id="canvas" width="3000" height="600">
+            <script src="styles.js"></script>
+          
+          </canvas>
+        
+        
+        </p>
+
+        <div class="w3-row-padding w3-center" style="margin-top:20px">
+         
+              <div class="w3-quarter">
+            
+        <p class="w3-large">Pledge the Big Sit</p>
+        <p>Join the BNC Bird Club as we sit in a 17 foot circle in the BNC parking lot and tally the bird species seen or heard from that small island!  This fundraiser supports our wildlife education programs and we are currently accepting pledges for each species seen (hint, hint: our record is 54 species!)  This annual fundraising event is held each May and our goal is to encourage others (especially kids) to experience the fun of this lifelong hobby of birdwatching.</p>
+
+      </div>
+      <div class="w3-quarter">
+        
+        <p class="w3-large">Combined Federal Campaign</p>
+        <p>Brukner Nature Center is happy to announce that we are a participating agency in the Combined Federal Campaign of both the Miami Valley Region and the Heart of Ohio region (CFC #25234).  The mission of the CFC is to support and promote philanthropy through a voluntary program that is employee-focused, cost-efficient and effective in providing all Federal employees the opportunity to improve the quality of life for all.  Please designate your gift to Brukner Nature Center and support our mission of environmental education and wildlife rehabilitation.  Thank you!</p>
+        <a href="https://cfcgiving.opm.gov/welcome" class="button" download><i></i>CFC Website</a>
+
+      </div>
+      <div class="w3-quarter">
+        
+        <p class="w3-large">Kroger Rewards</p>
+        <p>Kroger Community Rewards Program Please consider registering your Kroger Plus Card for the Kroger Community Rewards Program! This is a very easy way for you to help Brukner Nature Center earn money when you shop and it doesn’t affect your bill or Kroger Plus Points. Steps are provided below. As always, thank you for all your support! If you currently have a Kroger Plus Card: Login your Kroger account, go to "Community", then "Kroger Community Rewards". Click “Enroll Now” and search for Brukner Nature Center using our 5 digit number IC098. After you select Brukner Nature Center, you will be asked to verify your email address and that will complete your registration. If you use your phone # for your Kroger Plus Card: Please call 800-576-4377, select option 4 to get your Kroger Plus card number. Follow the steps above to enroll your card in the Kroger Community Rewards program. </p>
+      </div>
+      <div class="w3-quarter">
+        
+        <p class="w3-large">Adopt a Tree</p>
+        <p>Help us plant native trees at BNC’s
+
+          River’s Edge Wildlife Preserve!
+          
+          For a simple donation, you can help us purchase and plant a variety of native trees in prime locations, creating a welcoming entrance and future shade for weary hikers!  Each donor or recipient will receive a certificate of appreciation suitable for framing.
+          
+          You can even ‘plant a tree for the future’ in memory or honor of a loved one!</p>
+          <a href="PDFs/adopt_a_tree.pdf" class="button" download><i class="fa fa-download"></i>Download Adopt a Tree Brochure</a>
+
+      </div>
+      
+    </div>
+  
+    </div>
+  </div>
+
+ 
+  
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 5995 Horsehoe Bend rd. Troy, OH</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 937 698 6493</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: info@bruknernaturecenter.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <a href="mailto:info@bruknernaturecenter.com" title="Email"><i class="fa fa-paper-plane"></i> SEND MESSAGE </button>
+
+      </p>
+    </form>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/BruknerNatureCenter" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/bruknernaturecenter/" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+    <a href="https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=youtu.be" title="Youtube"><i class="fa fa-youtube w3-hover-opacity"></i></a> 
+
+  </div>
+  <div class="row">
+  
+    <!-- Grid column -->
+    <div class="col-md-4 mx-auto">
+
+      <!-- Content -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Brukner Nature Center Hours of Operation</h5>
+       <!--SVG ELEMENT-->
+    <svg height="10" width="500">
+      <line x1="5" y1="5" x2="500" y2="" style="stroke:rgb(2, 15, 4);stroke-width:2" />
+    </svg>
+      <p>Monday- Saturday: 9:00am - 5:00pm</p>
+      <p>Sunday: 12:30pm - 5:00pm</p>
+
+      <a href="https://www.paypal.com/donate?token=aiwTATk5GsTw_QwvOEdODl6e75wlnORg_guVlUas1jjFI9EHv-E__urzJHi5T0DXgOO9jcnsmtQzsNe3" class="w3-button w3-light-grey"><i class="w3-margin-right"></i>Donate</a>
+
+    </div>
+  
+    <div class="box__wrapper">
+      <div class="box-primary">
+Its About Wildlife      
+</div>
+    </div>
+   
+    </div>
+    
+</footer>
+
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

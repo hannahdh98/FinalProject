@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylsheet" href="styles.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fall.jpg");
+  min-height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/owl.jpg");
+
+  /* Set a specific height */
+  height:100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="margin: auto; display: block;" >
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-wide"href="index.html" style="padding: 4px;margin:auto"> <img src="images/logo.png" style="height:70px;width: 70px;" title="mycompanylogo"></a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Join Us</a>
+      <a href="#team" class="w3-bar-item w3-button"></i> Team</a>
+      <a href="#work" class="w3-bar-item w3-button"></i> Wildlife</a>
+      <a href="EventsPrograms.html" class="w3-bar-item w3-button"></i> Events & Programs </a>
+
+      <a href="#pricing" class="w3-bar-item w3-button"></i> Admission</a>
+      <a href="#resources" class="w3-bar-item w3-button"></i> Resources</a>
+      <a href="supportUs.html" class="w3-bar-item w3-button">Support BNC</a>
+
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Join Us</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Team</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Wildlife</a>
+  <a href="EventsPrograms.html" onclick="w3_close()" class="w3-bar-item w3-button">Events and Programs</a>
+
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Admission</a>
+  <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-button">Resources</a>
+  <a href="supportUs.html" onclick="w3_close()" class="w3-bar-item w3-button">Support BNC</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+
+</nav>
+
+<!-- Header with full-height image -->
+
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    
+    <span class="w3-jumbo w3-hide-small">Brukner Nature Center</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Brukner Nature Center</span><br>
+    <span class="w3-large">It's About Wildlife!</span> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <a href="https://www.facebook.com/BruknerNatureCenter" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/bruknernaturecenter/" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+    <a href="https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=youtu.be" title="Youtube"><i class="fa fa-youtube w3-hover-opacity"></i></a> 
+
+  
+  </div>
+</header>
+
+<!-- About Section -->
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">Join Us!</h3>
+  <p class="w3-center w3-large">  <img src="images/logo.jpg" alt="logo"></p>
+
+   <h5 class="w3-center font-weight-bold text-uppercase mt-3 mb-4">Brukner Nature Center Hours of Operation</h5>
+  <p class="w3-center">Monday- Saturday: 9:00am - 5:00pm</p>
+  <p class="w3-center">Sunday: 12:30pm - 5:00pm</p>
+  <p class="w3-center w3-large">Brukner Volunteer Opportunities</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <div class="w3-quarter">
+      <p class="w3-large">BNC Membership Form</p>
+      <a href="PDFs/membership_application.pdf" class="button" download><i class="fa fa-download"></i>Download Membership Form</a>
+    </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large">ANCA Reciprocal Member List</p>
+      <a href="PDFs/anca_reciprocal_member_list.pdf" class="button" download><i class="fa fa-download"></i>Download Member List</a>
+    </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large">BNC Adult Volunteer Form</p>
+      <a href="PDFs/bnc_adult_volunteer_form.pdf" class="button" download><i class="fa fa-download"></i>Download Adult Volunteer Form</a>
+    </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large">Internship Program Opportunities</p>
+      <a href="PDFs/internshipflyer.pdf" class="button" download><i class="fa fa-download"></i>Download Internship Flyer</a>
+    </div>
+    <iframe src="https://calendar.google.com/calendar/embed?src=htvqdcc30eci5nf5ch3nd52db0%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+  </div>
+
+</div>
+<!-- programs and resources -->
+
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64"id="resources">
+    <h3>Programs/Resources</h3>
+
+  <div class="w3-quarter">
+
+    <span class="w3-xlarge">Wildlife Ambassadors</span>
+    <br>Brukner Nature Center is home to over 50 wildlife ambassadors, native Ohio species that can no longer survive in the wild.  Come meet them in our indoor and outdoor exhibits!
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Scout Programs</span>
+    <br>Brukner Nature Center is dedicated to providing hands-on educational programs to meet the needs of scout leaders through guided discovery of our natural world.  We work in small group settings and strive to encourage boy and girl scouts, igniting a spark of interest in wildlife and wild places!
+
+    We offer a variety of field trips, awe-inspiring overnight adventures, outreach programs at your location and even an awesome hands-on evening program!
+    <a href="PDFs/nocturnal_adventure_brownies.pdf" class="button" download><i class="fa fa-download"></i>Girl Scout programs</a>
+    <a href="PDFs/scout_program_brochure.pdf" class="button" download><i class="fa fa-download"></i>Scout programs</a>
+    <a href="PDFs/nocturnal-wildlife-adventure.pdf" class="button" download><i class="fa fa-download"></i>Boy Scout programs</a>
+
+
+
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Field Trips/Outreach Programs</span>
+    <br>We offer a number of outreach programs for students, including our popular Wildlife Encounter featuring our wildlife ambassadors.  Our unique Senior Scientist programs are perfect for senior citizen homes and nursing centers with a different topic featured each month.
+    <a href="PDFs/compass.pdf" class="button" download><i class="fa fa-download"></i>Compass Fieldtrip & Outreach programs</a>
+    <a href="PDFs/wildlife_encounters.pdf" class="button" download><i class="fa fa-download"></i>Wildlife Encounters</a>
+    <a href="PDFs/senior_scientist.pdf" class="button" download><i class="fa fa-download"></i>Senior Scientist</a>
+
+
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Homeschool Programs</span>
+    <br>Homeschool Nature Club - registration open!
+
+    For homeschooled or online kids 5 - 11 years old
+    Classes offered the 2nd Wednesday, 3rd Wednesday, and Thursday following the 3rd Wednesday of the month (September - May)
+    Each month, students explore a different hands-on wildlife topic.
+    Sessions available:
+    
+    Morning: 9:30 - 11:00am; 9:45 - 11:15am
+    
+    Afternoon: 2:00 - 3:30pm; 2:15 - 3:45pm
+    
+    We will be following the state guidelines for covid-19 - currently all kids in grades K - 12th are required to wear a face mask while inside the building.
+    
+    Cost/Month:
+    
+    BNC Members:
+    
+    $3.00/per child
+    
+    Non-members:
+    
+    $6.00/per child
+    
+    (CASH OR CHECK ONLY)
+    
+    To pre-register:
+    
+    Call (937) 698-6493 or
+    
+    Email: info@bruknernaturecenter.com
+    
+    <a href="PDFs/homeschool_nature_club.pdf" class="button" download><i class="fa fa-download"></i>HSNC Topics</a>
+  <a href="PDFs/rivers_edge_explorers.pdf" class="button" download><i class="fa fa-download"></i>Rivers Edge Dates</a>
+
+  </div>
+  
+
+</div>
+
+<!--  "History" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our History.</h3>
+      <p>Brukner Nature Center
+
+        opened to the public in
+        
+        1974 and is the vision of
+        
+        Clayton J. Brukner, local
+        
+        philanthropist who was
+        
+        born December 18, 1896
+        
+        in Ravenna, Nebraska.
+        
+        With high school chum
+        
+        and business partner, E.J.
+        
+        "Sam" Junkin, he brought the Weaver Aircraft Company to Troy, Ohio in 1923. The company name was eventually changed to the WACO Aircraft Company, which became the most successful civil aircraft manufacturer of the pre World War II era.
+        
+         
+        
+        Clayton Brukner was an entrepreneur, mechanical genius, and community philanthropist. He had a great love for nature and in 1933 bought 146 acres of land along the Stillwater River, not known for its productivity, but rather for its natural beauty. In 1967 he unveiled his plans to build a nature center on this site and in May of 1974, Brukner Nature Center opened to the public.  The 165 acre preserve is traversed by 6 miles of hiking trails, Interpretive Building and the 1804 Iddings Log House.</p>
+        Brukner Nature Center is a privately funded, nonprofit organization promoting the appreciation and understanding of wildlife conservation through preservation, education, and rehabilitation. The 1804 Iddings log house was renovated in 1980 and again in 2006. It is on the registry of Historic Places as the oldest structure on its original site in Miami County!
+
+ 
+
+        Under the guidance of our first Directors, Bob & Joan Heidelberg, we grew to a 165-acre preserve with services reaching 21 counties. Today, we annually touch over 45,000 people with our innovative hands-on wildlife programming. Each year over 120,000 visitors enjoy our public events, take a stroll in the woods or visit with our wildlife ambassadors.
+        
+         
+        
+        In 1998 an addition to Interpretive Building doubled the size and provides handicap accessibility to all three floors including our popular Tree-top Bird Vista. In May of 2011, we renovated the interpretive area in our downstairs wildlife exhibits.  Our main lobby renovation was completed in May 2016 and we just finished our wildlife rehabilitation quarantine building in 2019!  Thank you to all of our supporters who have helped us reach all of our goals!
+      
+        </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/clay.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<h3 class="w3-center" id="team">THE TEAM</h3>
+<p class="w3-center w3-large">  <img src="images/logo.jpg" alt="logo"></p>
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/deb.jpg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Deb Oxemann</h2>
+          <p class="title">Executive Director</p>
+          <p>deb@bruknernaturecenter.com</p>
+          <p><button class="button" href="mailto:deb@bruknernaturecenter.com">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="images/ted.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Becky Crow</h2>
+          <p class="title">Curator of Wildlife</p>
+          <p>wildlife@bruknernaturecenter.com</p>
+          <p><button class="button" href="mailto:wildlife@bruknernaturecenter.com">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="images/june.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>June Drieling</h2>
+          <p class="title">Director of Education</p>
+          <p>education@bruknernaturecenter.com</p>
+          <p><button class="button" href="mailto:education@bruknernaturecenter.com">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- what to do wildlife -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">Four Steps to Animal Rescue
+        
+    </h3>
+    
+    <p class="w3-center w3-large">Is the animal...</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PB3kLwRZ0P8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="w3-quarter">
+        <p class="w3-large">Clearly injured?</p>
+        <p>Call to speak with one of our staff in our wildlife rehab unit at (937) 698-6493.</p>
+      </div>
+      <div class="w3-quarter">
+        
+        <p class="w3-large">sick or acting strangely?
+        </p>
+        <p>Call your county County Wildlife Officer or police non-emergency number.</p>
+      </div>
+      <div class="w3-quarter">
+        
+        <p class="w3-large">an uninjured nestling?</p>
+        <p>Simply return the young animal to its nest.</p>
+      </div>
+      <div class="w3-quarter">
+        
+        <p class="w3-large">an older uninjured youngster?</p>
+        <p>Please leave it alone and keep pets and children away so it isn't scared!</p>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+
+
+  <!-- tips Section -->
+
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64"id="wildlife">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZmuJDIlQrmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>What you should do if</h3>
+
+  <div class="w3-quarter">
+
+    <span class="w3-xlarge">A baby bird falls from its nest?</span>
+    <br>Simply place the baby back in the nest.  If this is not possible, clip a berry basket lined with dry grasses to a nearby branch and place the baby inside.  Check the following day to see if the young is warm and alert.
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">A nest of baby bunnies is found?</span>
+    <br>Do not disturb them.  Mother rabbits visit their nest only in the early morning and late evening.  Simply keep your dog or cat in at night and cover the nest with an item such as a laundry basket or milk crate during the day.
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">A baby squirrel falls from his nest?</span>
+    <br>Make a reunion box out of a cardboard box approximately 12 inches square.  Cut a 3” diameter hole about 3 inches from the bottom of one side.  Place the youngster inside the box with a warm water bottle or handwarmer under the towel and tape it shut.  Put the box in the vicinity of the nest or where the youngster was found and give mother 5 hours free of disturbance to reclaim her young.
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">You find an uninjured bird unable to fly?</span>
+    <br> Fledglings cannot fly, but are learning and still being fed by their parents. If necessary, simply move the youngster out of danger.
+    
+  </div>
+  
+</div>
+
+<!-- Animal Life-->
+<div class="w3-container" style="padding:128px 16px" id="work">
+
+  <h3 class="w3-center">Animal Life Brochure</h3>
+  
+  <p class="w3-center w3-large">Thanks to the Kenneth A. Scott Charitable Trust, Brukner Nature Center has developed 13 species-specific brochures to help you live with the wildlife in your own backyard!
+
+    Each brochure provides you with background information regarding the animal, ways to prevent problems from arising, recommended deterrents, laws protecting each wildlife, and other valuable information.  All brochures are listed to the right.  Simply click on the name and it will open a pdf file for you to review.
+    
+    If you have any questions , please give us a call at 937-698-6493.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-beavers.pdf" class="button" download><i class="fa fa-download"></i>Beaver Brochure</a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-chipmunks-and-squirrels.pdf" class="button" download><i class="fa fa-download"></i>Chipmunks & Squirrels Brochure</a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-coyotes-and-fox.pdf" class="button" download><i class="fa fa-download"></i>Coyotes & Fox Brochure</a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-eastern-cottontails.pdf" class="button" download><i class="fa fa-download"></i>Eastern Cottontails Brochure</a>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <p>
+        <a href="PDFs/wildlife-brochure-raccoons.pdf" class="button" download><i class="fa fa-download"></i>Raccoons Brochure</a>
+     </p>    
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-skunks.pdf" class="button" download><i class="fa fa-download"></i>Skunks Brochure</a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-songbirds.pdf" class="button" download><i class="fa fa-download"></i>Songbirds Brochure</a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-tree-squirrels.pdf" class="button" download><i class="fa fa-download"></i>Tree Squirrels Brochure</a>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-virginia-opossum.pdf" class="button" download><i class="fa fa-download"></i>Virginia Oppossum Brochure</a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-waterfowl.pdf" class="button" download><i class="fa fa-download"></i>Waterfowl Brochure</a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-white-tailed-deer.pdf" class="button" download><i class="fa fa-download"></i>White-tailed Deer Brochure</a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-woodchucks.pdf" class="button" download><i class="fa fa-download"></i>Woodchucks Brochure</a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="PDFs/wildlife-brochure-woodpeckers.pdf" class="button" download><i class="fa fa-download"></i>Woodpeckers</a>
+    </div>
+  </div>
+</div>
+
+
+  
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <srsc img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Educator resources Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Educator Recources</h3>
+      <p>Brukner Nature Center is a 235 acre wildlife preserve - a wonderful setting for hands-on experiential education. We are home to over 50 Wildlife Ambassadors (bobcat, bald eagle, birds of prey, foxes, and more!), a great variety of natural habitats (prairie, woodlands, wetlands and the Stillwater River), and the Iddings Log House, the oldest structure on its original site in Miami County. Our site is the ideal outdoor classroom for students learning about Ohio’s wildlife and natural history.</p>
+      <p>Brukner Nature Center offers both a variety of field trips on site, as well as outreach programs at your facility that focus on the wildlife around us. All programs are age appropriate and meet both Ohio State Standards and scout badge requirements, while providing hands-on activities and visuals along with the unique opportunity to meet live wildlife native to Ohio.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="w3-margin-right"></i>
+        <p>Brukner Nature Center offers both a variety of field trips on site, as well as outreach programs at your facility that focus on the wildlife around us. All programs are age appropriate and meet both Ohio State Standards and scout badge requirements, while providing hands-on activities and visuals along with the unique opportunity to meet live wildlife native to Ohio.</p>
+
+        We can't wait to see you at BNC!
+        
+        –June Drieling
+        
+           Director of Education</p>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Admission Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+    <div class="parallax">
+
+  <h3>Admission</h3>
+    <p class="w3-large">We want you and your family to visit the Brukner Nature Center!</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">With Membership</li>
+        <li class="w3-padding-16"><b></b> Trails</li>
+        <li class="w3-padding-16"><b></b> Interpretive Building</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">Free</h2>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Single/Without Membership</li>
+        <li class="w3-padding-16"><b></b> Trails</li>
+        <li class="w3-padding-16"><b></b> Interpretive Building</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$2.50</h2>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Family/Group Without Membership</li>
+          <li class="w3-padding-16"><b></b> Trails</li>
+          <li class="w3-padding-16"><b></b> Interpretive Building</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$10.00</h2>
+          </li>
+     
+        </ul>
+      </div>
+  </div>
+</div>
+</div>
+
+<!--DIRECTIONS-->
+<div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d784.7983277599343!2d-84.317571!3d40.01647400000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7b9b814a3b5fecd!2sBrukner%20Nature%20Center!5e1!3m2!1sen!2sus!4v1605655076405!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="w3-col m6">
+        <p class="w3-wide"><i class=" w3-margin-right"></i> Directions to the Interpretive Building</p>
+        <p>Find Us!
+
+ 
+
+            Directions to the Interpretive Building
+            
+            5995 Horseshoe Bend Rd., Troy, OH 45373
+            
+            From I-75 take exit 73.  Go west on St. Rt. 55 for 2.4 miles. Turn right onto Horseshoe Bend Rd. and go 2.1 miles.  The entrance will be on the right.
+            
+        </p>
+         
+        <div class="w3-col m6">
+            <p class="w3-wide"><i class=" w3-margin-right"></i> Directions to the Calumet Property</div>
+          Directions to the Calumet Property
+            
+          3909 Calumet Rd., West Milton, OH 45383
+          
+          Our new satellite preserve is open to the public from sunrise to sunset every day of the year and is located just a few miles southwest of us.  To get there, turn left out of Brukner Nature Center then take the first right (Greenlee Rd.) which will dead end into St. Rt. 55.  Turn right and follow 55 over the Stillwater River.  Turn left on Calumet Rd. immediately after crossing the bridge.  The parking area will be on your left.  The gravel lot provides space for 10 cars and access to a paver walkway leading to an information panel and our only trailhead, the Cascades Loop.</p>
+      
+        </div>
+     
+      </div>
+     
+      </div>
+    </div>
+ 
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 5995 Horsehoe Bend rd. Troy, OH</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 937 698 6493</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: info@bruknernaturecenter.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <a href="mailto:info@bruknernaturecenter.com" title="Email"><i class="fa fa-paper-plane"></i> SEND MESSAGE </button>
+      </p>
+    </form>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/BruknerNatureCenter" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/bruknernaturecenter/" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+    <a href="https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=youtu.be" title="Youtube"><i class="fa fa-youtube w3-hover-opacity"></i></a> 
+
+  </div>
+  <div class="row">
+  
+    <!-- Grid column -->
+    <div class="col-md-4 mx-auto">
+
+      <!-- Content -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Brukner Nature Center Hours of Operation</h5>
+      <p>Monday- Saturday: 9:00am - 5:00pm</p>
+      <p>Sunday: 12:30pm - 5:00pm</p>
+
+      <a href="https://www.paypal.com/donate?token=aiwTATk5GsTw_QwvOEdODl6e75wlnORg_guVlUas1jjFI9EHv-E__urzJHi5T0DXgOO9jcnsmtQzsNe3" class="w3-button w3-light-grey"><i class="w3-margin-right"></i>Donate</a>
+
+    </div>
+  
+
+    </div>
+</footer>
+
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

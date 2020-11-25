@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<title>Events and Programs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylsheet" href="styles.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/monarch.jpg");
+  min-height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fb1.jpg");
+
+  /* Set a specific height */
+  height:100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+
+    <a class="w3-bar-item w3-button w3-wide"href="index.html" style="padding: 4px;margin:auto"> <img src="images/logo.png" style="height:70px;width: 70px;" title="mycompanylogo"></a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+        <a href="#bncE" class="w3-bar-item w3-button">Events/Calendar</a>
+        <a href="#bncP" class="w3-bar-item w3-button"></i> Programs</a>
+        <a href="#bncC" class="w3-bar-item w3-button"></i> Activities </a>
+        <a href="#hiking" class="w3-bar-item w3-button"></i> Visit Us</a>
+
+        <a href="supportUs.html" class="w3-bar-item w3-button">Support BNC</a>
+        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-house"></i> Home</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+  
+
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#bnc#" onclick="w3_close()" class="w3-bar-item w3-button">Events/Calendar</a>
+  <a href="supportUs.html" onclick="w3_close()" class="w3-bar-item w3-button">Support Wildlife</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+  <a href="#bncP" onclick="w3_close()" class="w3-bar-item w3-button">Programs</a>
+  <a href="bncC" onclick="w3_close()" class="w3-bar-item w3-button">Activities</a>
+  <a href="hiking" onclick="w3_close()" class="w3-bar-item w3-button">Visit Us</a>
+
+
+
+
+ 
+
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Events and Programs At BNC</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Events and Programs At BNC</span><br>
+    <span class="w3-large">It's About Wildlife!</span> 
+  </div> 
+  
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <a href="https://www.facebook.com/BruknerNatureCenter" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/bruknernaturecenter/" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+    <a href="https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=youtu.be" title="Youtube"><i class="fa fa-youtube w3-hover-opacity"></i></a> 
+
+  
+  </div>
+</header>
+<!--BNC EVENTS-->
+<div class="w3-container" style="padding:128px 16px" id="bncE">
+    <h3 class="w3-center">BNC Events</h3>
+    <p class="w3-center w3-large">  <img src="images/logo.jpg" alt="logo"></p>
+
+    <p class="w3-center w3-large">Brukner Nature Center Fun!</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+  
+      <div class="w3-quarter">
+        <p class="w3-large">Wild Art</p>
+        <p>Wild Art! Fun painting events for children & adults. Join us for a unique FUNdraising event as we help you paint a portrait of wildlife at Brukner Nature Center. A BNC naturalist will provide an engaging introduction to the natural history of these woodland creatures, then Lisa Bauer of the Mayflower Arts Center will guide you as you paint on canvas. Upcoming dates: Sunday, November 1 1:00-4:00pm (will be held at BNC!) Wild Art! "Elements of Autumn" ages: 13 - adult Cost: $35/person (cash or check) 16"x20" canvas Deadline for payment: Friday, October 30 by 5:00pm - cash or check Pre-register by calling 937-698-6493.</p>
+      </div>
+      <div class="w3-quarter">
+        
+        <p class="w3-large">PEEP: Preschool Environmental Education Program
+
+        </p>
+        <p>Open registration for Winter 1 session begins November 23
+
+            Give the child in your life the gift to play, learn and grow with nature! Let them experience the outdoors using their imagination, free to climb trees and crawl over logs!
+            
+            We are planning our PEEP Winter Session 1 as an in-person class with a few changes! Class sizes will be limited to 10 children and the classes will be 1.5 hours of mostly outdoor activity (always dress for the weather - winter coat, boots, gloves, etc).  Please note that PEEP is geared specifically for children ages 3 – 5 years old, who are potty-trained and not currently in Kindergarten or being homeschooled.  We will be following the state guidelines for covid-19.
+            
+            Sessions offered: Monday, Tuesday, Wednesday, Thursday, and Friday mornings from 9:30 – 11:00am, or Thursday afternoons from 1:00 – 2:30pm.
+            
+            Winter 1 session will run from Jan. 4 - Feb.12.
+            
+            Cost for PEEP Winter 1 Session:
+            
+            $55 for BNC Members per child
+            
+            $75 for nonmembers per child
+            
+            (CASH OR CHECK ONLY)</p>
+      </div>
+      <div class="w3-quarter">
+        
+        <p class="w3-large">Birthday Parties</p>
+        <p>A fun, yet educational celebration!
+
+ 
+
+            Come celebrate your preschool or school-aged child’s birthday with their friends and our Wildlife Ambassadors!
+            
+            An awe-inspiring BNC Naturalist will provide a half-hour, hands-on, live wildlife program to make your child's party unforgettable!!  A large classroom is available for you to decorate, have cake and ice cream and play games with up to 15 of your child’s friends!  Party favors can be purchased in the Nature Shop and the trails and displays are available for your use.
+            
+            To schedule a party, call 937-698-6493 or click on the link below for complete party details!</p>
+            <a href="PDFs/birthday_parties2.pdf" class="button" download><i class="fa fa-download"></i>Party Flyer</a>
+            <a href="PDFs/bnc-facility-brochure.pdf" class="button" download><i class="fa fa-download"></i>Facility Brochure</a>
+
+        </div>
+      <div class="w3-quarter">
+        
+        <p class="w3-large">Monarch Celebration</p>
+        <p>6th annual Monarch Celebration
+
+            Covid-19 style!
+            
+             
+            
+            Our celebration will take place the entire month of September to allow for social distancing!
+            
+            Through the sponsorship of the Troy Noon Optimists, we are able to continue celebrating Monarchs - a big shout out goes to all of them!</p>
+      <p>Family friendly activities include:
+
+        1. Hike the Sugar Bush Trail around Cattail Pond and enjoy the self-guided Monarch trail, developed specially for the Monarch Celebration!
+        
+        2. Follow our Facebook posts on Monarchs for cool facts and interesting info!
+        
+        3. Fill out the Monarch Quiz Sheet - found at bottom.
+        <a href="PDFs/monarch-quiz.pdf" class="button" download><i class="fa fa-download"></i>Monarch Quiz Sheet</a>
+    
+        </div>
+        <iframe src="https://calendar.google.com/calendar/embed?src=htvqdcc30eci5nf5ch3nd52db0%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+    </div>
+
+  </div>
+
+
+<!-- programs-->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64"id="bncP">
+ 
+
+    <h3>Brukner Programs</h3>
+
+  <div class="w3-quarter">
+
+    <span class="w3-xlarge">The Art of Nature</span>
+    <br>4:30-7:30pm
+
+ 
+
+    This special evening, devoted to art and the environment, is a time to discover local artists inspired by nature, mingle with friends and family and show your support of our mission of wildlife conservation through education, preservation, and rehabilitation.
+    
+    Come meet our featured artist, enjoy organic wines, gourmet hors d’oeuvres, an amazing dessert bar and unique silent auction items, showcasing local companies, wildlife encounters, eco-artists and the amazing (and often surprising!) talents of our staff and trustees!
+    Admission:
+
+    <br>Admission is just $50/person and all proceeds support BNC's mission to promote the appreciation and understanding of wildlife conservation through preservation, education, and rehabilitation.
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Haunted Woods (CANCELLED)</span>
+    <br>CANCELLED DUE TO COVID-19
+
+    Come enjoy a kid-friendly evening filled live wildlife and costumed characters along a luminary-lit trail as you and your family learn all about the wild creatures of the night.  But the fun doesn’t stop there; activities also include free face painting, crafts and games, wildlife viewing, storytelling at a campfire plus cookies and cider after the hike.
+    
+     
+    
+    *Held indoors for inclement weather!
+    
+    
+    Cost:
+    
+    $5 per person for BNC Members
+    
+    $7 per person for non-members.
+    
+    Children ages 2 and under are free!
+    
+    (cash or check only)
+    
+     
+    
+    Gates open at 6:00pm
+    
+    Trail times: 6:30-8:00pm
+    
+    A group of 20 people is led by a trail guide through the woods, with the last group leaving at 8:00pm.  Estimated time on the trails is 45 minutes.
+    
+     
+    
+    Tickets are available on a first-come, first-served basis handed out in the order that you arrive at our entrance that evening.  Parking is limited.
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Arts and Crafts Show(CANCELLED) </span>
+<br> 9:00am-4:00pm
+
+ 
+
+Don’t miss Brukner Nature Center’s annual Winter Arts & Crafts Show, a Miami Valley holiday tradition for over 25 years!  You’ll find hundreds of one-of-a-kind nature-inspired gifts for that special someone on your list.  Come spend the whole day shopping the booths of over 50 local artisans and purchase raffle tickets for a chance to bring one of their donated items home with you!  Homemade pie and coffee, as well as, sustainably harvested mistletoe are available for purchase.  All proceeds benefit the wildlife programs at BNC.
+
+ 
+
+Free and open to the public!
+
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xlarge">Summer Camps for Kids </span>
+    <br> Sign up your 'junior naturalist', who are going into grades K – 5th, for a week of outdoor adventures, wild games and wildlife encounters sure to inspire & awe!
+
+ 
+
+    <br>Three camp experiences are offered in June and July:
+    
+    June 15 - 19 "Strive to Survive"
+    
+    June 29 - July 3 "Strive to Survive"
+    
+    July 13 - 17 "Wild Like Me"
+    
+     
+    
+    <br>Explore half day (9:00am-12:00pm)
+    
+    $75 for BNC Members
+    
+    $100 for nonmembers
+    
+    Cash or check only.  Prices are for entire week of camp!
+    
+    Deadline for all camps is the Wednesday before camp.
+    
+    Email info@bruknernaturecenter.com to preregister!
+    
+    <a href="PDFs/summer_brochure.pdf" class="button" download><i class="fa fa-download"></i>Click here the BNC Summer Program Brochure!</a>
+    <a href="PDFs/bnc_medical-consent-form.pdf" class="button" download><i class="fa fa-download"></i>Click here to download a Medical Consent Form</a>
+  </div>
+</div>
+
+</div>
+
+
+<!--HIKING-->
+<div class="w3-container"  id="hiking">
+  <h3 class="w3-center">Hiking, Bird Watching and More!</h3>
+  <p class="w3-center w3-large">  <img src="images/logo.jpg" alt="logo"></p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <div class="w3-quarter">
+      <p class="w3-large" >Interpretive Building</p>
+      <img src="images/bnc_building-small.jpg" alt="logo">
+<p>Art Exhibits & Kid's Nature Art Exhibit. Each season brings a new wildlife art exhibit to Brukner Nature Center's Heidelberg Auditorium and Meeting Room! Come enjoy our current art exhibit and mark you calendars for the opening of our new exhibit! Nature Library All visitors can enjoy the field guides, nature writings, DVDs and more! A special section of the Nature Library is devoted to kids' nature picture books, so stop by and gather your family for your own nature story time! Nature Gift Shop Check out our unique items in our nature shop at your next visit! We have field guides, children books, t-shirts, waterbottles, turtle necklaces, owl pellets, bird calls, a variety of bird houses, our own "Brukner Blend" coffee, and so much more! </p>    
+</div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large">Take a Hike!
+
+      </p>
+      <p>Brukner Nature Center has 6 miles of nature trails that allow you to search for wildlife on quiet mulch trails through wooldland, wetland, and prairie.
+
+ 
+
+        Trails are open from sunrise to sunset only!
+        No pets allowed - they scare our wildlife!
+        No smoking or vaping on BNC property!
+        Please stay on the trails, especially through the muddy parts!  Off-trail exploration causes erosion, damages wildflowers, & depletes habitat by widening trails.
+        Please take all trash home with you!</p>
+        <a href="PDFs/trail-map-layout-1 (1).pdf" class="button" download><i class="fa fa-download"></i>Trail Map Guide</a>
+
+      </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large">Bird Watching</p>
+      <img src="images/bird.jpg" alt="logo">
+      <p>Tree-Top Bird Vista Brukner Nature Center is a premier birding spot for spring bird migration, winter feeder watching (Project FeederWatch) and enjoying birds at any time of the year! The Tree-Top Bird Vista is an air-conditioned oasis during summer months and a warm and inviting place to spend the winter hours! The pileated woodpecker visits our feeders on a regular basis year round! Check out our calendar of events for upcoming birding programs! Meet members of the Brukner Bird Club on the 3rd Sunday of every month from 2:00-4:00pm in our Tree-Top Bird Vista.</p>
+       
+      </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large">River’s Edge Wildlife Preserve</p>
+      <img src="images/sign.jpg" alt="logo">
+      <p>Open from sunrise to sunset and is located just a few miles southwest of us.
+
+ 
+
+        Directions from BNC to River's Edge Wildlife Preserve:
+        
+        Turn left out of Brukner Nature Center then take the first right onto Greenlee Rd., which will dead end into St. Rt. 55.  Turn right and follow S.Rt. 55 over the Stillwater River.  Turn left on Calumet Rd. immediately after crossing the bridge.  The parking area will be on your left.
+        
+         
+        
+        The gravel lot provides space for 10 cars and access to a paver walkway leading to an information panel and our first and only trailhead, the Cascades Loop.  Enjoy this hike as it follows the crest of the ravine, providing excellent opportunities for birdwatching in the treetops below!  It then passes a small limestone cascade that flows only in the wetter months, but is a unique ecosystem supporting rare flora and fauna.  The trail follows an old access road down into the forested valley then back up a gently sloping rise back to the parking lot.</p>
+  
+      </div>
+
+  </div>
+
+</div>
+
+
+<!-- clubs -->
+<div class="w3-container" style="padding:128px 16px" id="bncC" style="background-color:rgba(0, 0, 0, 0.342)">
+    
+  <div class="parallax">
+
+  <h3 class="w3-center" style="color:white;">Activities</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <p class="w3-large"style="color:white;">Winter Vacation Camps
+
+      </p>
+      <p style="color:white;">“Winter Wildlife Myths” Kids in grades K-5th 9:30am - 11:30am When the air turns frigid and the frost settles on the windows, children fi ll with anticipation of winter vacation. Sign your child up for a morning of exploration and fill their new found free time with fun and learning. During this winter vacation we will investigate the truth behind some popular wildlife myths! Do all birds migrate for winter? Do squirrels really hibernate? Come meet our wildlife ambassadors and learn what’s fact and what’s fiction! Register for one or both days: Monday’s topic is mammals Tuesday's topic is birds PRICE PER DAY OF CAMP: $15 for BNC Members • $20 for non-members (may register for 1 or 2 days; cash or check) Deadline: Wednesday, December 16 by 5:00pm 
+        Winter Vacation Camps</p>
+        <p style="color:white;">Price per day camp: $15.00 for BNC members and $20.00 for non-members</p>
+        <a href="PDFs/bnc_medical-consent-form.pdf" class="button" download><i class="fa fa-download"></i>Click here to download a Medical Consent Form</a>
+      </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large" style="color:white;">5K Run Wild for Wildlife!
+
+    </p>
+      <p style="color:white;">Details for 2020:
+
+        If you enjoy running or hiking the woodland trails, you’ll love BNC’s VIRTUAL 5K Run Wild for Wildlife!  For details about this event this year, click on the registration form link on the right.
+        
+        The deadline for registrations for participants wanting a super cool T-shirt is Wednesday, April 8
+        
+        Registrations with no T-shirts must be postmarked by Thursday, April 16 or dropped off by Tuesday, April 21 at 7pm.
+        
+        You can run/hike anytime you want - like in the whole next year!! - but arrows for the course will be set up Saturday, April 25 – Sunday, May 10.
+        
+        Please don't all come at once - we must social distance, people! :)  If the parking lot is packed, come back another time!
+        
+        Start training now! </p>
+        <a href="PDFs/5k-run-registration-form.pdf" class="button" download><i class="fa fa-download"></i>Registration Form</a>
+    </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large" style="color:white;">Wish List</p>
+      <p style="color:white;">
+        Wildlife Rehab:
+
+Disposable non-latex exam gloves (size M/L), bath towels (please, no holes or frayed edges), Cheerios (plain), cottonballs, Timothy hay, fresh fruit & vegetables, moist & dry cat food, dry dog food, poultry grower & finisher (16% protein), saline solution, He laundry detergent pods, dishwasher detergent pods, bleach, 30 gallon force flex trash bags, toilet paper, paper towels, live mealworms, live waxworms, hard-shelled nuts (acorns, walnuts, etc), black oil sunflower seed, mixed seed, gift cards to Meijer, Lowes, PetCo, and Tractor Supply.
+
+Nature Education:
+
+Gift cards for Kroger, Jay & Mary's Book Store, and Amazon, jumbo clear hand soap refill, jumbo hand sanitizer refill, sanitizer wipes, spring clothes pins, 30 gallon black trash bags, watercolor paint sets, tissues, washable markers, construction paper (yellow, blue, black, brown).
+      </p>
+   
+      </div>
+    <div class="w3-quarter">
+      
+      <p class="w3-large" style="color:white;" >Young Birders Club
+
+    </p>
+      <p style="color:white;">
+        Come be a part of one of the most exciting and rewarding clubs, geared specifically for young birders in grades 6 through 12!   As a member of Brukner Nature Center’s Young Birders Club you’ll enjoy the opportunity to:
+
+        Discover and study the amazing birds found
+        at Brukner Nature Center through hands-on monthly meetings and hikes!
+        Get experience using BNC’s high quality binoculars and field guides during our meetings, hikes and special events, so no extra equipment is needed!
+        Join in field trips and other special events with BNC staff and the BNC Bird Club adults!
+        Network with other young naturalists and professional ornithologists during opportunities for young birders around the state!
+        Apply for scholarships to attend summer camps, workshops, classes, training programs, conventions and other bird-related activities!
+      </p>
+      <p style="color:white;">Membership is only $10.00 per year and due at the 3rd meeting you attend.
+
+      For more information email: brian@brukneraturecenter.com</p>
+      <a href="PDFs/ybc_membership.pdf" class="button" download><i class="fa fa-download"></i>YBC Member Form</a>
+
+      </div>
+      <iframe  class="w3-center" width="560" height="315" src="https://www.youtube.com/embed/NbOPSxgBZ3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+
+</div>  
+<!--  Idling cabin-->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Iddings Log House
+
+      </h3>
+      <p>
+        An integral part of Brukner Nature Center’s interpretive programming, the 1804 Iddings Log House also holds an important place in the history of Miami County.  The Iddings family is originally descended from the Norsemen and came to America from Radnorshire, Wales in 1683.  Richard Iddings and his wife, Sarah Thomas, arrived in Philadelphia, Pennsylvania and settled in Nantmeal Township, Pennsylvania, between the forks of the Brandywine River and French Creek, very near a little place called Valley Forge.  Richard and Sarah Iddings were the grandparents of two famous figures in Ohio history, General “Mad” Anthony Wayne and Benjamin Iddings.
+
+ 
+
+Benjamin Iddings married Phebe Wilkinson in 1775, in Pennsylvania.  Their children, listed in the Quaker Monthly Meeting records were Rachel, Ruth, Talbot, Joseph, Mary, Benjamin Jr., Phoebe, William, Millie and Hannah.  The Iddings were a prominent and very active family in the Quaker community.  They began their life on the road in 1779, moving frequently to escape the fighting in the area.  They settled in Greene County, Tennessee in 1795.  Here they helped found the New Hope Monthly Meeting, were Benjamin was appointed recorder in 1796 and was an Elder.
+
+ 
+
+Following the Treaty of Greeneville in 1795, the Ohio territory was opened for settlement.  Benjamin, perhaps because of his famous cousin’s experience in the area, made an exploratory trip up the Stillwater River into what is now Newton Township.  He moved his family to Miami County, acquiring a patent on 160 acres on SE 1/4 Sec. 33-7-5E.  Here, in 1804, Benjamin constructed the log house on what is now Brukner Nature Center property.  Benjamin and Phoebe lived here with six of their ten children, as Rachel had passed away and Ruth, Talbot & Joseph were married and on their own.
+
+ 
+
+ 
+
+A History of the 1804 Iddings Log House
+
+Iddings Log House
+
+Interestingly, Benjamin built his house on the property of his neighbor, Benjamin Pearson and later paid him the sum of $63.11 ½ for an additional four acres upon which his house was built.  Although this sounds strange for modern times, it was not unusual for property lines to be mistaken in the wilderness of 1800 Ohio.  Phoebe died in 1818 and in 1822, Benjamin married his widowed neighbor, Ruth Pierce.  Benjamin died in 1826, and both he and Ruth are buried in Old Union Cemetery, on Horseshoe Bend Road.
+
+ 
+
+Through extensive research, the underlying historical value of the structure itself was realized, not only for its handsome construction but for the significant family history.  In 1976, the 1804 Iddings Log House was placed on the National Register of Historic Places and a successful restoration was completed in 1981.  Through its doors have passed many visitors stepping back in time, from Iddings relatives looking for a link to the past to children too numerous to count making memories to last a lifetime.
+      </p>
+        </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/log.jpg" alt="Buildings" width="600" height="600">
+    </div>
+  </div>
+</div>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 5995 Horsehoe Bend rd. Troy, OH</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 937 698 6493</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: info@bruknernaturecenter.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <a href="mailto:info@bruknernaturecenter.com" title="Email"><i class="fa fa-paper-plane"></i> SEND MESSAGE </button>
+          </p>
+    </form>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.facebook.com/BruknerNatureCenter" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/bruknernaturecenter/" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+    <a href="https://www.youtube.com/watch?v=PB3kLwRZ0P8&feature=youtu.be" title="Youtube"><i class="fa fa-youtube w3-hover-opacity"></i></a> 
+
+    </div>
+    <div class="row">
+    
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+  
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Brukner Nature Center Hours of Operation</h5>
+        <p>Monday- Saturday: 9:00am - 5:00pm</p>
+        <p>Sunday: 12:30pm - 5:00pm</p>
+  
+        <a href="https://www.paypal.com/donate?token=aiwTATk5GsTw_QwvOEdODl6e75wlnORg_guVlUas1jjFI9EHv-E__urzJHi5T0DXgOO9jcnsmtQzsNe3" class="w3-button w3-light-grey"><i class=" w3-margin-right"></i>Donate</a>
+
+      </div>
+    
+  
+      </div>
+  </footer>
+  
+   
+  <script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+  
+  </body>
+  </html>
+  
